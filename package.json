@@ -1,0 +1,25 @@
+{
+  "name": "data-provider-core",
+  "version": "1.0.0",
+  "description": "This is an abstractions for data-provider in the app",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "data-management",
+    "data-provider"
+  ],
+  "author": "positional_advantage_coder",
+  "license": "ISC",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.2"
+  }
+}
