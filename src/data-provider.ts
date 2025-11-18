@@ -1,9 +1,9 @@
 import { Observable } from 'rxjs';
 import { Entity } from './entity';
-import {EntityConverter} from "./converter";
+import { EntityConverter } from "./converter";
 
 export abstract class DataProvider {
-    protected abstract converterMap: Map<string, EntityConverter<any, any>>
+    public abstract converterMap: Map<string, EntityConverter<any, any>>
 
     public abstract getEntity<T extends Entity<string>>(path: string): Observable<T | undefined>;
 
