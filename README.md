@@ -1,11 +1,4 @@
 # @positional-advantage-libs/data-provider-core
-
-
-
-```markdown
-Npm package - https://www.npmjs.com/package/data-provider-core
-```
-
 A framework-agnostic TypeScript library for creating a backend-agnostic data access layer. It provides a set of core contracts that allow you to completely decouple your application's business logic from its data source.
 
 > The primary goal of this library is to remove direct dependency of your project on data provider of you choice.
