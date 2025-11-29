@@ -1,6 +1,6 @@
 {
   "name": "data-provider-core",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "This is an abstractions for data-provider in the app",
   "main": "dist/index.js",
   "scripts": {
