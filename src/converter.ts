@@ -1,5 +1,4 @@
 import { Entity } from './entity';
-import {IdGenerator} from "@positional_advantage_coder/id-generator";
 
 export abstract class EntityConverter<ID = string, T extends Entity<ID> = Entity<ID>> {
     abstract toPlainObject(entity: T): object;
