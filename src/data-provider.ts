@@ -1,6 +1,6 @@
-import { Observable } from 'rxjs';
-import { Entity } from './entity';
-import { EntityConverter } from "./converter";
+import {Observable} from 'rxjs';
+import {Entity} from './entity';
+import {EntityConverter} from "./converter";
 import {IdGenerator} from "@positional_advantage_coder/id-generator";
 
 export abstract class DataProvider {
@@ -10,7 +10,7 @@ export abstract class DataProvider {
 
     public abstract getEntity<T extends Entity<string>>(path: string): Observable<T | undefined>;
 
-    public abstract createEntity<T extends Entity<string>>(path: string, draftEntity: Omit<T, 'id'>): Observable<T | undefined>;
+    public abstract createEntity<T extends Entity<string>>(path: string, entityTypeKey: string, draftEntity: Omit<T, 'id' | 'typeKey'>): Observable<T | undefined>;
 
     public abstract listenToCollectionChanges<T extends Entity<string>>(path: string): Observable<T[]>;
 
