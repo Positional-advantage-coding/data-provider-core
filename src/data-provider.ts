@@ -10,7 +10,9 @@ export abstract class DataProvider {
 
     public abstract getEntity<T extends Entity<string>>(path: string): Observable<T | undefined>;
 
-    public abstract createEntity<T extends Entity<string>>(path: string, entityTypeKey: string, draftEntity: Omit<T, 'id' | 'typeKey'>): Observable<T | undefined>;
+    public abstract createEntity<T extends Entity<string>>(path: string, entityTypeKey: string, entityData: Omit<T, 'id' | 'typeKey'>): Observable<T | undefined>;
+
+    public abstract updateEntity<T extends Entity<string>>(path: string, entityTypeKey: string, entityData: Partial<Omit<T, 'id' | 'typeKey'>>): Observable<T | undefined>;
 
     public abstract listenToCollectionChanges<T extends Entity<string>>(path: string): Observable<T[]>;
 
